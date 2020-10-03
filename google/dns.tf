@@ -38,7 +38,7 @@ module "moreal-dev-dns" {
       type    = "CNAME"
       ttl     = 0
       records = [
-        "0.tcp.ngrok.io",
+        "0.tcp.ngrok.io.",
       ]
     },
   ]
