@@ -33,5 +33,13 @@ module "moreal-dev-dns" {
         "185.199.111.153",
       ]
     },
+    {
+      name    = "mc"
+      type    = "CNAME"
+      ttl     = 0
+      records = [
+        "0.tcp.ngrok.io",
+      ]
+    },
   ]
 }
