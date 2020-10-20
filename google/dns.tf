@@ -35,10 +35,10 @@ module "moreal-dev-dns" {
     },
     {
       name    = "mc"
-      type    = "CNAME"
+      type    = "A"
       ttl     = 0
       records = [
-        "0.tcp.ngrok.io.",
+        "124.48.176.87",
       ]
     },
   ]
