@@ -1,4 +1,4 @@
-resource "cloudflare_zone" "tfer--moreal-002E-dev" {
+resource "cloudflare_zone" "moreal-dev" {
   paused = "false"
   plan   = "free"
   type   = "full"
