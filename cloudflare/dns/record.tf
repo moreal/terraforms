@@ -42,3 +42,12 @@ resource "cloudflare_record" "homelab-moreal-dev" {
   value   = "ns.moreal.dev"
   zone_id = cloudflare_zone.moreal-dev.id
 }
+
+resource "cloudflare_record" "finance-moreal-dev" {
+  name    = "finance.moreal.dev"
+  proxied = "true"
+  ttl     = "1"
+  type    = "CNAME"
+  value   = "ecstatic-wing-1cedc5.netlify.app"
+  zone_id = cloudflare_zone.moreal-dev.id
+}
