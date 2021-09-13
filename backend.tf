@@ -3,6 +3,10 @@ terraform {
     cloudflare = {
       source = "cloudflare/cloudflare"
     }
+
+    vultr = {
+      source = "vultr/vultr"
+    }
   }
 
   backend "remote" {
