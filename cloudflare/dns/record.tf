@@ -3,7 +3,7 @@ resource "cloudflare_record" "tfer--A_moreal-002E-dev_ac8b24be1d356fbbeecd3ecb58
   proxied = "true"
   ttl     = "1"
   type    = "A"
-  value   = "124.48.176.87"
+  value   = "158.247.197.121"
   zone_id = cloudflare_zone.moreal-dev.id
 }
 
