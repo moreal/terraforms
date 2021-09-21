@@ -29,6 +29,15 @@ resource "cloudflare_record" "blog-moreal-dev" {
   name    = "blog.moreal.dev"
   proxied = "true"
   ttl     = "1"
+  type    = "A"
+  value   = "158.247.197.121"
+  zone_id = cloudflare_zone.moreal-dev.id
+}
+
+resource "cloudflare_record" "github-blog-moreal-dev" {
+  name    = "github-blog.moreal.dev"
+  proxied = "true"
+  ttl     = "1"
   type    = "CNAME"
   value   = "gallant-blackwell-de38ee.netlify.app"
   zone_id = cloudflare_zone.moreal-dev.id
